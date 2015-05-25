@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title> Chat </title>
+    <link rel="stylesheet" href="../resources/css/style.css" type="text/css">
+    <script src="../resources/js/scripts.js"></script>
+</head>
+<header >
+	<span class="title">
+		Chat
+	</span>
+
+    <section id="changeName">
+        <div style="border-radius: 8px;" class="radius">
+            <input id ="newN" type="text" placeholder="Enter User Name..." size="22" maxlength="22" class="userName">
+        </div>
+        <input type="button" value="&nbsp;Change a name" class="butSign">
+    </section>
+
+    <span id="Name"> Sam Baker</span>
+    <div class="status"></div>
+
+
+</header>
+<body onload="run();">
+<section id = "messages" class ="messageBox">
+    <div class="box" id ="messages2" border="2"></div>
+
+    <textarea  id="newMessage" rows=3 cols=71 class="message" placeholder="New Message..."></textarea>
+    <input type="button" value="&nbsp;Send" class="butSend">
+    <input type="button" value="&nbsp;Delete" class="butDelete">
+    <input type="button" value="&nbsp;Edit" class="butEdit">
+    <input type="button" value="&nbsp;Save" class="butSave">
+</section>
+
+</body>
+</html>

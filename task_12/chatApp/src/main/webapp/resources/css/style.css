@@ -1,0 +1,180 @@
+body 
+{
+	background: url("../lines.jpg");
+	background-color: #FFE4C4;
+}
+
+.title { 
+   color: #363636;
+   font-size: 80px; 
+   font-family: sans-serif; 
+   position: absolute;
+   top: 5%;
+   left: 5%;
+}
+#Name{
+	 color: #363636;
+   font-size: 18px; 
+   font-family: sans-serif; 
+   position: absolute;
+   top: 5%;
+   left: 88%;
+   font-weight: bold;
+   
+}
+.userName {
+	position: absolute;
+	top: 25%;
+  left: 10%;
+	min-width: 100px;
+	width: 155px;
+  height: 17px;
+  border: none;
+  background: #FFFFFF;
+  font-size: 12px; 
+	font-family: sans-serif; 
+	color : #363636;
+
+}
+
+.radius {
+    background: #FFFFFF; 
+    border: 1px solid black; 
+    padding: 10px; 
+    width: 155px;
+    height: 10px;
+    position: absolute;
+	  top: 20%;
+    left: 5%;
+   }
+
+.status {
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid black; 
+    width: 300px;
+    height: 33px;
+    border-radius: 5px;
+    position: absolute;
+	  top: 20%;
+    left: 75%;
+   }
+
+.butSign{
+	border-radius: 8px;
+	background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  border-width: 4px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+	position: absolute;
+	top: 27%;
+  left: 5%;
+  width: 130px;
+  height: 27px;
+  font-size: 14px; 
+	font-family: sans-serif; 
+	color :white;
+}
+.mainText{
+	background: #FFFFFF;
+	position: absolute;
+	top: 25%;
+  left: 32%;
+  border-radius: 5px;
+  border-width: 2px ;
+  border-color: #9C9C9C;
+  font-size: 12px; 
+	font-family: sans-serif; 
+	color :black;
+}
+.message{
+	background: #FFFFFF;
+	position: absolute;
+	top: 76.5%;
+  left: 32%;
+  border-radius: 5px;
+  border-width: 2px ;
+  border-color: #9C9C9C ;
+  font-size: 12px; 
+	font-family: sans-serif; 
+	color :#363636;
+	height: 40px;
+}
+
+.butEdit{
+	border-radius: 10px;
+	background: linear-gradient(to top, #B03060, #8B2252);
+  border: none;
+	position: absolute;
+	top: 85.5%;
+  left: 32%;
+  width: 80px;
+  height: 24px;
+  font-size: 14px; 
+	font-family: sans-serif; 
+	color :white;
+}
+.butDelete{
+	border-radius: 10px;
+	background: linear-gradient(to top,#4F4F4F,#696969);
+  border: none;
+	position: absolute;
+	top: 85.5%;
+  left: 46%;
+  width: 80px;
+  height: 24px;
+  font-size: 14px; 
+	font-family: sans-serif; 
+	color :white;
+}
+.butSave{
+  border-radius: 10px;
+  background: linear-gradient(to top,#87CEFF,#436EEE);
+  border: none;
+  position: absolute;
+  top: 85.5%;
+  left: 39%;
+  width: 80px;
+  height: 24px;
+  font-size: 14px; 
+  font-family: sans-serif; 
+  color :white;
+}
+.butSend{
+	border-radius: 10px;
+	background: linear-gradient(to top,#228B22,#98FB98);
+  border: none;
+	position: absolute;
+	top: 85.5%;
+  left: 60.7%;
+  width: 80px;
+  height: 24px;
+  font-size: 14px; 
+	font-family: sans-serif; 
+	color :white;
+}
+
+.box{
+  border: 1px solid #9C9C9C; 
+  overflow:auto; 
+  background: #FFFFFF;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  border-radius: 5px;
+  border-width: 2px ;
+  font-size: 14px; 
+  font-family: sans-serif; 
+  color :black;
+  width:445px; 
+  height:300px;  
+  
+  
+}
+
+#t-box{margin-left:32px;}
+
+.select{
+    background-color: #FFA07A;
+}
+
