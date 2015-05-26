@@ -93,7 +93,7 @@ function saveMessage(newText){
 	        mes = list.children[i];
 	        editId = list.children[i].id;
 	        
-	        newMes = theMessage(newText, appState.history[i].userName, editId);
+	        newMes = theMessage(newText, appState.history[i].user, editId);
 	        
 	        mes.classList.remove('select');
 	        mes.children[1].innerText = newText;

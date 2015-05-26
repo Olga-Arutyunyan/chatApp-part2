@@ -124,6 +124,28 @@ public class MainServlet extends HttpServlet {
 
 
     }
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        logger.info("doPut");
+        String data = ServletUtil.getMessageBody(request);
+        Message message;
+        try {
+            JSONObject json = stringToJson(data);
+            message = jsonToMessage(json);
+            logger.info("Edit Message: " + message.getUser() + ":" + message.getText());
+
+            XMLHistoryUtil.updateData(message);
+
+            response.setStatus(HttpServletResponse.SC_OK);
+        } catch (ParseException e) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            logger.error("Invalid message");
+        } catch (Exception ne){
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            logger.error(ne);
+        }
+
+
+    }
     private String formResponse(int index) throws SAXException, IOException, ParserConfigurationException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(MESSAGES, XMLHistoryUtil.getSubMessagesByIndex(index));
